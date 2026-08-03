@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aCA1ZBXfESE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Presentation.Users\\Cafeservello.Modules.Presentation.Users.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WillianRafael\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
+    "C:\\Users\\WillianRafael\\.nuget\\packages\\microsoft.openapi\\2.11.0\\microsoft.openapi.2.11.0.nupkg.sha512",
+    "C:\\Users\\WillianRafael\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.2.3\\swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

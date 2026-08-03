@@ -1,17 +1,20 @@
 <Solution>
-  <Folder Name="/Common/" />
-  <Folder Name="/Common/1 - Presentation/" />
-  <Folder Name="/Common/2 - Application/" />
-  <Folder Name="/Common/3 - Domain/">
-    <Project Path="Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj" />
+  <Folder Name="/cafeservello-backend/" />
+  <Folder Name="/cafeservello-backend/Common/" />
+  <Folder Name="/cafeservello-backend/Common/1 - Presentation/" />
+  <Folder Name="/cafeservello-backend/Common/2 - Application/" />
+  <Folder Name="/cafeservello-backend/Common/3 - Domain/">
+    <Project Path="cafeservello-backend/Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj" />
   </Folder>
-  <Folder Name="/Common/4 - Infrastructure/" />
-  <Folder Name="/Modules/" />
-  <Folder Name="/Modules/User/" />
-  <Folder Name="/Modules/User/1 - Presentation/" />
-  <Folder Name="/Modules/User/2 - Application/" />
-  <Folder Name="/Modules/User/3 - Domain/">
-    <Project Path="Modules/User/Cafeservello.Modules.Domain.User/Cafeservello.Modules.Domain.User.csproj" />
+  <Folder Name="/cafeservello-backend/Common/4 - Infrastructure/" />
+  <Folder Name="/cafeservello-backend/Modules/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/1 - Presentation/">
+    <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Presentation.Users/Cafeservello.Modules.Presentation.Users.csproj" Id="7594009d-4151-467d-8038-0af1706fbf18" />
   </Folder>
-  <Folder Name="/Modules/User/4 - Infrastructure/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/2 - Application/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/3 - Domain/">
+    <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Domain.Users/Cafeservello.Modules.Domain.Users.csproj" />
+  </Folder>
+  <Folder Name="/cafeservello-backend/Modules/Users/4 - Infrastructure/" />
 </Solution>
