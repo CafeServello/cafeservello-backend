@@ -34,3 +34,13 @@ C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-ba
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\obj\Debug\net10.0\Cafeservello.Modules.Presentation.Users.genruntimeconfig.cache
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\obj\Debug\net10.0\ref\Cafeservello.Modules.Presentation.Users.dll
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.deps.json
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.runtimeconfig.json
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.staticwebassets.endpoints.json
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.exe
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Domain.dll
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.dll
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Modules.Domain.Users.dll
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Presentation.pdb
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Modules.Domain.Users.pdb
+C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Modules\Users\Cafeservello.Modules.Presentation.Users\bin\Debug\net10.0\Cafeservello.Common.Domain.pdb

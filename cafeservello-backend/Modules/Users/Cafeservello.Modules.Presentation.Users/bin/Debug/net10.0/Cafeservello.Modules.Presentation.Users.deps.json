@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "Cafeservello.Modules.Presentation.Users/1.0.0": {
         "dependencies": {
+          "Cafeservello.Common.Presentation": "1.0.0",
+          "Cafeservello.Modules.Domain.Users": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.10",
           "Microsoft.OpenApi": "2.11.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "10.2.3"
@@ -42,6 +44,37 @@
             "fileVersion": "10.2.3.2721"
           }
         }
+      },
+      "Cafeservello.Common.Domain/1.0.0": {
+        "runtime": {
+          "Cafeservello.Common.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Cafeservello.Common.Presentation/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.10",
+          "Microsoft.OpenApi": "2.11.0"
+        },
+        "runtime": {
+          "Cafeservello.Common.Presentation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Cafeservello.Modules.Domain.Users/1.0.0": {
+        "dependencies": {
+          "Cafeservello.Common.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cafeservello.Modules.Domain.Users.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -71,6 +104,21 @@
       "sha512": "sha512-nthWONRs/FJ4yyG206g1cC52WEG8EqrjuMWjGdR+5XG7lbjFto6NqcI9EMICgVFom/UivIjUVwI76ZHbHwTPfQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/10.2.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512"
+    },
+    "Cafeservello.Common.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cafeservello.Common.Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cafeservello.Modules.Domain.Users/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\..\Common\Cafeservello.Common.Presentation\Cafeservello.Common.Presentation.csproj" />
+    <ProjectReference Include="..\Cafeservello.Modules.Domain.Users\Cafeservello.Modules.Domain.Users.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,9 @@
 <Solution>
   <Folder Name="/cafeservello-backend/" />
   <Folder Name="/cafeservello-backend/Common/" />
-  <Folder Name="/cafeservello-backend/Common/1 - Presentation/" />
+  <Folder Name="/cafeservello-backend/Common/1 - Presentation/">
+    <Project Path="cafeservello-backend/Common/Cafeservello.Common.Presentation/Cafeservello.Common.Presentation.csproj" Id="c7476849-1f69-4995-9c97-2ed85071e536" />
+  </Folder>
   <Folder Name="/cafeservello-backend/Common/2 - Application/" />
   <Folder Name="/cafeservello-backend/Common/3 - Domain/">
     <Project Path="cafeservello-backend/Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj" />

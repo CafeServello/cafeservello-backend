@@ -52,6 +52,46 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Cafeservello.Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Cafeservello.Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cafeservello.Common.Domain.dll": {}
+        }
+      },
+      "Cafeservello.Common.Presentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.10",
+          "Microsoft.OpenApi": "2.11.0"
+        },
+        "compile": {
+          "bin/placeholder/Cafeservello.Common.Presentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cafeservello.Common.Presentation.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Cafeservello.Modules.Domain.Users/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Cafeservello.Common.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cafeservello.Modules.Domain.Users.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cafeservello.Modules.Domain.Users.dll": {}
+        }
       }
     }
   },
@@ -112,10 +152,27 @@
         "swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Cafeservello.Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj",
+      "msbuildProject": "../../../Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj"
+    },
+    "Cafeservello.Common.Presentation/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Cafeservello.Common.Presentation/Cafeservello.Common.Presentation.csproj",
+      "msbuildProject": "../../../Common/Cafeservello.Common.Presentation/Cafeservello.Common.Presentation.csproj"
+    },
+    "Cafeservello.Modules.Domain.Users/1.0.0": {
+      "type": "project",
+      "path": "../Cafeservello.Modules.Domain.Users/Cafeservello.Modules.Domain.Users.csproj",
+      "msbuildProject": "../Cafeservello.Modules.Domain.Users/Cafeservello.Modules.Domain.Users.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Cafeservello.Common.Presentation >= 1.0.0",
+      "Cafeservello.Modules.Domain.Users >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.10",
       "Microsoft.OpenApi >= 2.11.0",
       "Swashbuckle.AspNetCore.SwaggerUI >= 10.2.3"
@@ -154,7 +211,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Presentation\\Cafeservello.Common.Presentation.csproj": {
+              "projectPath": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Presentation\\Cafeservello.Common.Presentation.csproj"
+            },
+            "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj": {
+              "projectPath": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

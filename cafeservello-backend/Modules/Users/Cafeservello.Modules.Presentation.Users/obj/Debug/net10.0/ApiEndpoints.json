@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
+    "Method": "PostAsync",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Cafeservello.Modules.Domain.Users.Entities.User.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "Cafeservello.Modules.Domain.Users.Entities.User.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
