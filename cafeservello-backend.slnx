@@ -4,19 +4,27 @@
   <Folder Name="/cafeservello-backend/Common/1 - Presentation/">
     <Project Path="cafeservello-backend/Common/Cafeservello.Common.Presentation/Cafeservello.Common.Presentation.csproj" Id="c7476849-1f69-4995-9c97-2ed85071e536" />
   </Folder>
-  <Folder Name="/cafeservello-backend/Common/2 - Application/" />
+  <Folder Name="/cafeservello-backend/Common/2 - Application/">
+    <Project Path="cafeservello-backend/Common/Cafeservello.Common.Application/Cafeservello.Common.Application.csproj" Id="3abb4887-5bc5-40cb-bd4f-a451768aa193" />
+  </Folder>
   <Folder Name="/cafeservello-backend/Common/3 - Domain/">
     <Project Path="cafeservello-backend/Common/Cafeservello.Common.Domain/Cafeservello.Common.Domain.csproj" />
   </Folder>
-  <Folder Name="/cafeservello-backend/Common/4 - Infrastructure/" />
+  <Folder Name="/cafeservello-backend/Common/4 - Infrastructure/">
+    <Project Path="cafeservello-backend/Common/Cafeservello.Common.Infrastructure/Cafeservello.Common.Infrastructure.csproj" Id="36fe0739-6c14-472b-bdbe-b56f103e85df" />
+  </Folder>
   <Folder Name="/cafeservello-backend/Modules/" />
   <Folder Name="/cafeservello-backend/Modules/Users/" />
   <Folder Name="/cafeservello-backend/Modules/Users/1 - Presentation/">
     <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Presentation.Users/Cafeservello.Modules.Presentation.Users.csproj" Id="7594009d-4151-467d-8038-0af1706fbf18" />
   </Folder>
-  <Folder Name="/cafeservello-backend/Modules/Users/2 - Application/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/2 - Application/">
+    <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Application.Users/Cafeservello.Modules.Application.Users.csproj" Id="6b0ac466-bed4-43ed-b35f-c91e6ebd48e1" />
+  </Folder>
   <Folder Name="/cafeservello-backend/Modules/Users/3 - Domain/">
     <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Domain.Users/Cafeservello.Modules.Domain.Users.csproj" />
   </Folder>
-  <Folder Name="/cafeservello-backend/Modules/Users/4 - Infrastructure/" />
+  <Folder Name="/cafeservello-backend/Modules/Users/4 - Infrastructure/">
+    <Project Path="cafeservello-backend/Modules/Users/Cafeservello.Modules.Infrastructure.Users/Cafeservello.Modules.Infrastructure.Users.csproj" Id="5f189ca7-4181-416f-9b7e-b9bcdabc7b32" />
+  </Folder>
 </Solution>

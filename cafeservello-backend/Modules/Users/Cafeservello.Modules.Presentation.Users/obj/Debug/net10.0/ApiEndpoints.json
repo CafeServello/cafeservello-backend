@@ -2,7 +2,7 @@
   {
     "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
     "Method": "GetAllAsync",
-    "RelativePath": "api/users",
+    "RelativePath": "api/Users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,14 +12,14 @@
   {
     "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
     "Method": "PostAsync",
-    "RelativePath": "api/users",
+    "RelativePath": "api/Users",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "entity",
-        "Type": "Cafeservello.Modules.Domain.Users.Entities.User.User",
+        "Type": "Cafeservello.Modules.Domain.Users.DTOs.UserDTO",
         "IsRequired": true
       }
     ],
@@ -28,7 +28,7 @@
   {
     "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
     "Method": "DeleteAsync",
-    "RelativePath": "api/users/{id}",
+    "RelativePath": "api/Users/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
     "Method": "UpdateAsync",
-    "RelativePath": "api/users/{id}",
+    "RelativePath": "api/Users/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -56,7 +56,7 @@
       },
       {
         "Name": "entity",
-        "Type": "Cafeservello.Modules.Domain.Users.Entities.User.User",
+        "Type": "Cafeservello.Modules.Domain.Users.DTOs.UserDTO",
         "IsRequired": true
       }
     ],

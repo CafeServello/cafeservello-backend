@@ -1,3 +1,11 @@
+using Cafeservello.Modules.Application.Users.Interfaces.Services;
+using Cafeservello.Modules.Application.Users.Services;
+using Cafeservello.Modules.Domain.Users.Interfaces.Repository;
+using Cafeservello.Modules.Domain.Users.Interfaces.Services;
+using Cafeservello.Modules.Domain.Users.Services;
+using Cafeservello.Modules.Infrastructure.Users.Repository;
+using Cafeservello.Modules.Presentation.Users.Extensions;
+using System.Reflection;
 
 namespace Cafeservello.Modules.Presentation.Users
 {
@@ -7,24 +15,33 @@ namespace Cafeservello.Modules.Presentation.Users
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+
+            builder.Services.AddDatabase(builder.Configuration);
 
             builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
+
+            builder.Services.AddScoped<IUserApp, UserApp>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddEndpointsApiExplorer();
+
+            builder.Services.AddSwaggerGen(options =>
+            {
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+
+                options.IncludeXmlComments(xmlPath);
+            });
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                // 1. Gera o documento JSON da API
-                app.MapOpenApi();
+                app.UseSwagger();
 
-                // 2. Conecta a interface gráfica do Swagger ao JSON gerado pelo .NET
                 app.UseSwaggerUI(options =>
                 {
-                    options.SwaggerEndpoint("/openapi/v1.json", "Café Servello - API USERS V.1");
+                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Café Servello API v1");
                     options.RoutePrefix = "swagger";
                 });
             }
@@ -32,7 +49,6 @@ namespace Cafeservello.Modules.Presentation.Users
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

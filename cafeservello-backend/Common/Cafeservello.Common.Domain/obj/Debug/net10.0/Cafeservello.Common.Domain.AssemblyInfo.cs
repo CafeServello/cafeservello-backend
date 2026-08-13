@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cafeservello.Common.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00f57377ce24eee3e71f84915694822d85825588")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f8689bf682f81df1295f61ac129b4ae38624c86")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cafeservello.Common.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cafeservello.Common.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

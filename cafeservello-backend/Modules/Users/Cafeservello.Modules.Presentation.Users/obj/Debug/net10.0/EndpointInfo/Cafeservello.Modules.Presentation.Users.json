@@ -1,23 +1,16 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "Cafeservello.Modules.Presentation.Users | v1",
-    "version": "1.0.0"
+    "title": "Cafeservello.Modules.Presentation.Users",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "https://localhost:7123"
-    },
-    {
-      "url": "http://localhost:5123"
-    }
-  ],
   "paths": {
-    "/api/users": {
+    "/api/Users": {
       "get": {
         "tags": [
           "Users"
         ],
+        "summary": "Read all existing users",
         "responses": {
           "200": {
             "description": "OK"
@@ -28,25 +21,25 @@
         "tags": [
           "Users"
         ],
+        "summary": "Create a new user",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -55,11 +48,12 @@
         }
       }
     },
-    "/api/users/{id}": {
+    "/api/Users/{id}": {
       "delete": {
         "tags": [
           "Users"
         ],
+        "summary": "Soft Delete a user by its id",
         "parameters": [
           {
             "name": "id",
@@ -81,6 +75,7 @@
         "tags": [
           "Users"
         ],
+        "summary": "Update an existing user",
         "parameters": [
           {
             "name": "id",
@@ -96,21 +91,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UserDTO"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -123,136 +117,89 @@
   "components": {
     "schemas": {
       "Address": {
-        "required": [
-          "city",
-          "street",
-          "state",
-          "number",
-          "country",
-          "zipCode"
-        ],
         "type": "object",
         "properties": {
           "city": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "street": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "state": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "number": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "country": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "zipCode": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "neighborhood": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "complement": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "Contact": {
-        "required": [
-          "cellPhone"
-        ],
         "type": "object",
         "properties": {
           "primaryEmail": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "secondaryEmail": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "cellPhone": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "landline": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
-      },
-      "Permissions": {
-        "type": "object"
+        },
+        "additionalProperties": false
       },
       "Personal": {
-        "required": [
-          "dateOfBirth",
-          "cpf",
-          "sex"
-        ],
         "type": "object",
         "properties": {
           "lastName": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "dateOfBirth": {
             "type": "string",
             "format": "date-time"
           },
           "cpf": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
-          "sex": {
+          "gender": {
             "type": "boolean"
           }
-        }
+        },
+        "additionalProperties": false
       },
-      "Privacy": {
+      "UserDTO": {
         "type": "object",
         "properties": {
-          "userName": {
-            "type": "string"
-          },
-          "password": {
-            "type": "string"
-          }
-        }
-      },
-      "Profile": {
-        "type": "object",
-        "properties": {
-          "permissions": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Permissions"
-              }
-            ]
-          },
-          "profileType": {
-            "$ref": "#/components/schemas/ProfileType"
-          },
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "id": {
             "type": "string",
             "format": "uuid"
@@ -275,110 +222,26 @@
           },
           "isActive": {
             "type": "boolean"
-          }
-        }
-      },
-      "ProfileType": {
-        "type": "integer"
-      },
-      "Settings": {
-        "type": "object",
-        "properties": {
-          "themes": {
-            "$ref": "#/components/schemas/Themes"
-          }
-        }
-      },
-      "Themes": {
-        "type": "integer"
-      },
-      "User": {
-        "required": [
-          "privacy",
-          "profile",
-          "address",
-          "contact",
-          "personal",
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "privacy": {
-            "$ref": "#/components/schemas/Privacy"
-          },
-          "profile": {
-            "$ref": "#/components/schemas/Profile"
-          },
-          "settings": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Settings"
-              }
-            ]
-          },
-          "address": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Address"
-              }
-            ]
-          },
-          "contact": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Contact"
-              }
-            ]
-          },
-          "personal": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Personal"
-              }
-            ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "description": {
-            "type": "string"
-          },
-          "id": {
             "type": "string",
-            "format": "uuid"
+            "nullable": true
           },
-          "createdBy": {
-            "type": "string",
-            "format": "uuid"
+          "addressDTO": {
+            "$ref": "#/components/schemas/Address"
           },
-          "updatedBy": {
-            "type": "string",
-            "format": "uuid"
+          "contactDTO": {
+            "$ref": "#/components/schemas/Contact"
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "isActive": {
-            "type": "boolean"
+          "personalDTO": {
+            "$ref": "#/components/schemas/Personal"
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },

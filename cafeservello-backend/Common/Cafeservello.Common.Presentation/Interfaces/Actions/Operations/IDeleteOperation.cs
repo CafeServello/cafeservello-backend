@@ -2,7 +2,7 @@
 
 namespace Cafeservello.Common.Presentation.Interfaces.Actions.Operations
 {
-    public interface IDeleteOperation
+    public interface IDeleteOperation<T>
     {
         Task<IActionResult> DeleteAsync(Guid id);
     }

@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Cafeservello.Modules.Application.Users/1.0.0": {
+        "dependencies": {
+          "Cafeservello.Common.Application": "1.0.0",
+          "Cafeservello.Modules.Domain.Users": "1.0.0"
+        },
+        "runtime": {
+          "Cafeservello.Modules.Application.Users.dll": {}
+        }
+      },
+      "Cafeservello.Common.Application/1.0.0": {
+        "dependencies": {
+          "Cafeservello.Common.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cafeservello.Common.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Cafeservello.Common.Domain/1.0.0": {
+        "runtime": {
+          "Cafeservello.Common.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Cafeservello.Modules.Domain.Users/1.0.0": {
+        "dependencies": {
+          "Cafeservello.Common.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cafeservello.Modules.Domain.Users.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cafeservello.Modules.Application.Users/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cafeservello.Common.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cafeservello.Common.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cafeservello.Modules.Domain.Users/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

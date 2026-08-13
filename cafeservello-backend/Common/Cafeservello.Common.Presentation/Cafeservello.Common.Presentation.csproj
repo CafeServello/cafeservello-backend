@@ -9,6 +9,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
     <PackageReference Include="Microsoft.OpenApi" Version="2.11.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cafeservello.Common.Application\Cafeservello.Common.Application.csproj" />
+    <ProjectReference Include="..\Cafeservello.Common.Domain\Cafeservello.Common.Domain.csproj" />
+    <ProjectReference Include="..\Cafeservello.Common.Infrastructure\Cafeservello.Common.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

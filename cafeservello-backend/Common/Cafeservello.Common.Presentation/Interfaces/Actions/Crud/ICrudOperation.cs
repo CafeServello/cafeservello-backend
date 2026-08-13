@@ -2,7 +2,7 @@
 
 namespace Cafeservello.Common.Presentation.Interfaces.Actions.Crud
 {
-    public interface ICrudOperation<T> : IReadOperation, IPostOperation<T>, IUpdateOperation<T>, IDeleteOperation
+    public interface ICrudOperation<T> : IReadOperation<T>, IPostOperation<T>, IUpdateOperation<T>, IDeleteOperation<T>
     {
 
     }

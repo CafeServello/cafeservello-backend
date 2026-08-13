@@ -1,32 +1,41 @@
-﻿using Cafeservello.Common.Presentation.Interfaces.Actions.Crud;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Cafeservello.Common.Presentation.Controllers
 {
-    public abstract class BaseController<T> : ControllerBase, ICrudOperation<T>
+    [ApiController]
+    [Route("api/[controller]")]
+    public abstract class BaseController : ControllerBase
     {
-        [HttpGet]
-        public virtual async Task<IActionResult> GetAllAsync()
+        protected async Task<IActionResult> InvokeMethodAsync<T>(Func<Task<T>> method)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest();
+
+                return Ok(await method());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpDelete("{id}")]
-        public virtual async Task<IActionResult> DeleteAsync(Guid id)
+        protected async Task<IActionResult> InvokeMethodAsync(Func<Task> method)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest();
 
-        [HttpPost]
-        public virtual async Task<IActionResult> PostAsync([FromBody] T entity)
-        {
-            throw new NotImplementedException();
-        }
+                await method();
 
-        [HttpPut("{id}")]
-        public virtual async Task<IActionResult> UpdateAsync(Guid id, [FromBody] T entity)
-        {
-            throw new NotImplementedException();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
