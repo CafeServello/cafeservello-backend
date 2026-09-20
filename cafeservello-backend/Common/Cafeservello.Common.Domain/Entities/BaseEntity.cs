@@ -8,14 +8,13 @@
         public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
         public bool IsActive { get; private set; } = true;
-
-        protected BaseEntity() { }
-
         public BaseEntity(Guid userId)
         {
             CreatedBy = userId;
             UpdatedBy = userId;
         }
+
+        protected BaseEntity(){}
 
         public virtual void Update(Guid userId)
         {

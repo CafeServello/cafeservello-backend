@@ -34,9 +34,14 @@ namespace Cafeservello.Modules.Infrastructure.Users.Mappings
                     .IsRequired();
             });
 
+            builder.Property(x => x.ProfileId)
+                .HasColumnName("ID_PROFILE")
+                .IsRequired();
+
             builder.HasOne(x => x.Profile)
                 .WithMany()
                 .HasForeignKey(x => x.ProfileId)
+                .HasConstraintName("FK_USER_PROFILE")
                 .IsRequired();
         }
     }

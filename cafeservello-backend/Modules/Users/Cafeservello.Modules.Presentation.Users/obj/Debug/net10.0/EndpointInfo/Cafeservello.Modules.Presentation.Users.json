@@ -49,11 +49,10 @@
       }
     },
     "/api/Users/{id}": {
-      "delete": {
+      "get": {
         "tags": [
           "Users"
         ],
-        "summary": "Soft Delete a user by its id",
         "parameters": [
           {
             "name": "id",
@@ -111,12 +110,34 @@
             "description": "OK"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Soft Delete a user by its id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   },
   "components": {
     "schemas": {
-      "Address": {
+      "AddressDTO": {
         "type": "object",
         "properties": {
           "city": {
@@ -154,7 +175,7 @@
         },
         "additionalProperties": false
       },
-      "Contact": {
+      "ContactDTO": {
         "type": "object",
         "properties": {
           "primaryEmail": {
@@ -176,7 +197,11 @@
         },
         "additionalProperties": false
       },
-      "Personal": {
+      "Permissions": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "PersonalDTO": {
         "type": "object",
         "properties": {
           "lastName": {
@@ -196,6 +221,90 @@
           }
         },
         "additionalProperties": false
+      },
+      "PrivacyDTO": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfileDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "createdBy": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "updatedBy": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "permissions": {
+            "$ref": "#/components/schemas/Permissions"
+          },
+          "profileType": {
+            "$ref": "#/components/schemas/ProfileType"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfileType": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SettingsDTO": {
+        "type": "object",
+        "properties": {
+          "themes": {
+            "$ref": "#/components/schemas/Themes"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Themes": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "UserDTO": {
         "type": "object",
@@ -232,13 +341,26 @@
             "nullable": true
           },
           "addressDTO": {
-            "$ref": "#/components/schemas/Address"
+            "$ref": "#/components/schemas/AddressDTO"
           },
           "contactDTO": {
-            "$ref": "#/components/schemas/Contact"
+            "$ref": "#/components/schemas/ContactDTO"
           },
           "personalDTO": {
-            "$ref": "#/components/schemas/Personal"
+            "$ref": "#/components/schemas/PersonalDTO"
+          },
+          "privacyDTO": {
+            "$ref": "#/components/schemas/PrivacyDTO"
+          },
+          "profileId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "profileDTO": {
+            "$ref": "#/components/schemas/ProfileDTO"
+          },
+          "settingsDTO": {
+            "$ref": "#/components/schemas/SettingsDTO"
           }
         },
         "additionalProperties": false

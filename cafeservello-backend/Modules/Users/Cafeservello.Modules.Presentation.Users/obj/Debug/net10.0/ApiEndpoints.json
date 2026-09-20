@@ -27,9 +27,9 @@
   },
   {
     "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
-    "Method": "DeleteAsync",
+    "Method": "GetByIdAsync",
     "RelativePath": "api/Users/{id}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -50,13 +50,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "entity",
+        "Type": "Cafeservello.Modules.Domain.Users.DTOs.UserDTO",
         "IsRequired": true
       },
       {
-        "Name": "entity",
-        "Type": "Cafeservello.Modules.Domain.Users.DTOs.UserDTO",
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cafeservello.Modules.Presentation.Users.Controllers.UsersController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

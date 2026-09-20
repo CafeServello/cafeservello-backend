@@ -1,8 +1,6 @@
-using Cafeservello.Modules.Application.Users.Interfaces.Services;
+using Cafeservello.Modules.Application.Users.Interfaces;
 using Cafeservello.Modules.Application.Users.Services;
 using Cafeservello.Modules.Domain.Users.Interfaces.Repository;
-using Cafeservello.Modules.Domain.Users.Interfaces.Services;
-using Cafeservello.Modules.Domain.Users.Services;
 using Cafeservello.Modules.Infrastructure.Users.Repository;
 using Cafeservello.Modules.Presentation.Users.Extensions;
 using System.Reflection;
@@ -21,7 +19,6 @@ namespace Cafeservello.Modules.Presentation.Users
             builder.Services.AddControllers();
 
             builder.Services.AddScoped<IUserApp, UserApp>();
-            builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddEndpointsApiExplorer();
 

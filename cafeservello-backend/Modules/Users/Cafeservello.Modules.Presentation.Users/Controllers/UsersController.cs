@@ -1,8 +1,9 @@
 ﻿using Cafeservello.Common.Presentation.Controllers;
 using Cafeservello.Common.Presentation.Interfaces.Actions.Crud;
-using Cafeservello.Modules.Application.Users.Interfaces.Services;
+using Cafeservello.Modules.Application.Users.Interfaces;
 using Cafeservello.Modules.Domain.Users.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI.Common;
 
 namespace Cafeservello.Modules.Presentation.Users.Controllers
 {
@@ -11,10 +12,10 @@ namespace Cafeservello.Modules.Presentation.Users.Controllers
     /// </summary>
     public class UsersController : BaseController, ICrudOperation<UserDTO>
     {
-        private readonly IUserApp _userApp;
+        private readonly IUserApp _userContext;
 
         public UsersController(IUserApp userApp) {
-            _userApp = userApp;
+            _userContext = userApp;
         }
         /// <summary>
         /// Read all existing users
@@ -24,8 +25,41 @@ namespace Cafeservello.Modules.Presentation.Users.Controllers
         {
             return await InvokeMethodAsync(async () =>
             {
-                var users = await _userApp.GetAllAsync();
+                var users = await _userContext.GetAllAsync();
                 return Ok(users);
+            });
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(Guid id)
+        {
+            var user = await _userContext.GetByIdAsync(id);
+
+            return Ok(user);
+        }
+
+        /// <summary>
+        /// Create a new user
+        /// </summary>
+        [HttpPost]
+        public async Task<IActionResult> PostAsync(UserDTO entity)
+        {
+            return await InvokeMethodAsync(async () =>
+            {
+                await _userContext.CreateAsync(entity);
+            });
+        }
+        /// <summary>
+        /// Update an existing user
+        /// </summary>
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAsync([FromBody] UserDTO entity, [FromRoute] Guid id)
+        {
+
+            return await InvokeMethodAsync(async () =>
+            {
+                var result = await _userContext.UpdateAsync(entity, id);
+                return Ok(result); // Passa o objeto retornado para o Ok()
             });
         }
 
@@ -41,29 +75,8 @@ namespace Cafeservello.Modules.Presentation.Users.Controllers
             });
         }
 
-        /// <summary>
-        /// Create a new user
-        /// </summary>
-        [HttpPost]
-        public async Task<IActionResult> PostAsync(UserDTO entity)
-        {
-            return await InvokeMethodAsync(async () =>
-            {
-                return Ok();
-            });
-        }
-
-        /// <summary>
-        /// Update an existing user
-        /// </summary>
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAsync(Guid id, UserDTO entity)
-        {
-            return await InvokeMethodAsync(async () =>
-            {
-                return Ok();
-            });
-        }
+        
+        
 
     }
 }

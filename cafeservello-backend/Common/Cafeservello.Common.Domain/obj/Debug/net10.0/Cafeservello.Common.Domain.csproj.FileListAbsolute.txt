@@ -32,3 +32,15 @@ C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-ba
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\refint\Cafeservello.Common.Domain.dll
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.pdb
 C:\Users\WillianRafael\Desktop\cafeservello\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\ref\Cafeservello.Common.Domain.dll
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\bin\Debug\net10.0\Cafeservello.Common.Domain.deps.json
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\bin\Debug\net10.0\Cafeservello.Common.Domain.dll
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\bin\Debug\net10.0\Cafeservello.Common.Domain.pdb
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.AssemblyInfoInputs.cache
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.AssemblyInfo.cs
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.csproj.CoreCompileInputs.cache
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.sourcelink.json
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.dll
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\refint\Cafeservello.Common.Domain.dll
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\Cafeservello.Common.Domain.pdb
+C:\Users\WillianRafael\Desktop\cafeservello-backend\cafeservello-backend\Common\Cafeservello.Common.Domain\obj\Debug\net10.0\ref\Cafeservello.Common.Domain.dll

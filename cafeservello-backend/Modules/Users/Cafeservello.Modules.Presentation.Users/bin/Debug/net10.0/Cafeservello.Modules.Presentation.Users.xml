@@ -14,20 +14,20 @@
             Read all existing users
             </summary>
         </member>
-        <member name="M:Cafeservello.Modules.Presentation.Users.Controllers.UsersController.DeleteAsync(System.Guid)">
-            <summary>
-             Soft Delete a user by its id
-             </summary>
-        </member>
         <member name="M:Cafeservello.Modules.Presentation.Users.Controllers.UsersController.PostAsync(Cafeservello.Modules.Domain.Users.DTOs.UserDTO)">
             <summary>
             Create a new user
             </summary>
         </member>
-        <member name="M:Cafeservello.Modules.Presentation.Users.Controllers.UsersController.UpdateAsync(System.Guid,Cafeservello.Modules.Domain.Users.DTOs.UserDTO)">
+        <member name="M:Cafeservello.Modules.Presentation.Users.Controllers.UsersController.UpdateAsync(Cafeservello.Modules.Domain.Users.DTOs.UserDTO,System.Guid)">
             <summary>
             Update an existing user
             </summary>
+        </member>
+        <member name="M:Cafeservello.Modules.Presentation.Users.Controllers.UsersController.DeleteAsync(System.Guid)">
+            <summary>
+             Soft Delete a user by its id
+             </summary>
         </member>
         <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type)">
             <summary>

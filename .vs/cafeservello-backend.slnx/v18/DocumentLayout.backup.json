@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\dtos\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|solutionrelative:cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\dtos\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\entities\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|solutionrelative:cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\entities\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B312AE-1625-046D-EAB1-FC225352543C}|cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Cafeservello.Modules.Domain.Users.csproj|solutionrelative:cafeservello-backend\\modules\\users\\cafeservello.modules.domain.users\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\common\\cafeservello.common.domain\\entities\\baseperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|solutionrelative:cafeservello-backend\\common\\cafeservello.common.domain\\entities\\baseperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\common\\cafeservello.common.domain\\entities\\basenamed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|solutionrelative:cafeservello-backend\\common\\cafeservello.common.domain\\entities\\basenamed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|c:\\users\\willianrafael\\desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\common\\cafeservello.common.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D74E64-98F5-0456-9A7E-A363DF2E004B}|cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Cafeservello.Common.Domain.csproj|solutionrelative:cafeservello-backend\\common\\cafeservello.common.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\DTOs\\ProfileDTO.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\DTOs\\ProfileDTO.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\DTOs\\ProfileDTO.cs*",
+              "RelativeToolTip": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\DTOs\\ProfileDTO.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T14:34:29.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\User.cs",
+              "RelativeToolTip": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T13:36:32.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\Profile.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\Profile.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\Profile.cs",
+              "RelativeToolTip": "cafeservello-backend\\Modules\\Users\\Cafeservello.Modules.Domain.Users\\Entities\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T13:36:13.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasePerson.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BasePerson.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BasePerson.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BasePerson.cs",
+              "RelativeToolTip": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BasePerson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T13:31:31.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseNamed.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseNamed.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseNamed.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseNamed.cs",
+              "RelativeToolTip": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseNamed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T13:31:03.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\WillianRafael\\Desktop\\cafeservello\\cafeservello-backend\\cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "cafeservello-backend\\Common\\Cafeservello.Common.Domain\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T13:30:41.027Z"
             }
           ]
         }

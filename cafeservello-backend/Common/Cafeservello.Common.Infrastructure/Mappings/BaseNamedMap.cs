@@ -16,11 +16,10 @@ namespace Cafeservello.Common.Infrastructure.Mappings
                 .HasMaxLength(200)
                 .IsRequired();
 
-            builder 
+            builder
                 .Property(x => x.Description)
                 .HasColumnName("DESCRIPTION")
-                .HasMaxLength(300)
-                .IsRequired();
+                .HasMaxLength(300);
         }
     }
 }

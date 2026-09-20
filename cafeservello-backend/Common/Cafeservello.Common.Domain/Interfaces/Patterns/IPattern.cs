@@ -1,9 +1,10 @@
-﻿using Cafeservello.Common.Domain.Entities;
-
-namespace Cafeservello.Common.Domain.Interfaces.Patterns
+﻿namespace Cafeservello.Common.Domain.Interfaces.Patterns
 {
-    public interface IPattern<TEntity> where TEntity : BaseEntity
+    public interface IPattern<T> where T : class
     {
-        Task<IEnumerable<TEntity>> GetAllAsync();
+        Task<IEnumerable<T>> GetAllAsync();
+        Task CreateAsync(T entity);
+        Task<T> UpdateAsync(T entity, Guid? id = null);
+        Task<T> GetByIdAsync(Guid id);
     }
 }

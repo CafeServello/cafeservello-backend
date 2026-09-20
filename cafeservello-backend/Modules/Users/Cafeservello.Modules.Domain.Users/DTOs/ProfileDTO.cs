@@ -1,6 +1,6 @@
-﻿using Cafeservello.Common.Domain.DTOs;
+﻿bbbbbbbbbbbbbbbbbbbusing Cafeservello.Common.Domain.DTOs;
 using Cafeservello.Modules.Domain.Users.Common.Enums;
-using Cafeservello.Modules.Domain.Users.Common.ObjectValues;
+using Cafeservello.Modules.Domain.Users.Common.ObjectValues.Entities;
 
 namespace Cafeservello.Modules.Domain.Users.DTOs
 {
